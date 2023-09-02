@@ -1,13 +1,13 @@
 <p align="center">
-  <img src="https://media.discordapp.net/attachments/1082632266506850344/1108449684709703770/image.png" alt="Gray shape shifter" height="120" style="max-width: 100%;">
+  <img src="https://media.discordapp.net/attachments/887305445302206464/1147445568696746014/Logo.png" alt="Gray shape shifter" height="120" style="max-width: 100%;">
 </p>
 <h1 align="center" tabindex="-1" dir="auto">HolaClient</h1>
 <p align="center" dir="auto">Trusted by hundreds of hosts and thousands of users.</p>
 <p align="center">
-  <a><img src="https://img.shields.io/github/downloads/CR072/HolaClient/total?color=blue&label=Downloads"/></a>
-  <a href="https://discord.gg/CvqRH9TrYK"><img src="https://img.shields.io/discord/1038719273658499072?color=blue&label=Discord&logo=HolaClient&logoColor=blue" alt="discord" /></a>
-  <a href="https://docs.holaclient.tech"><img alt="Website" src="https://img.shields.io/website?down_color=lightred&down_message=Offline&label=Docs&up_color=blue&up_message=Online&url=https%3A%2F%2Fholaclient.tech%2F"></a>
-  <a  href="https://github.com/CR072/HolaClient/stargazers"><img src="https://img.shields.io/github/stars/CR072/HolaClient?label=Stars %E2%AD%90" height="20"/></a>
+  <a><img src="https://img.shields.io/github/downloads/Nimbexa/NimbexaClient/total?color=blue&label=Downloads"/></a>
+  <a href="https://discord.gg/WXHnnpejNm"><img src="https://img.shields.io/discord/1140672042803413082?color=blue&label=Discord&logo=Nimbexa&logoColor=blue" alt="discord" /></a>
+  <a href="https://nimbexa.cloud"><img alt="Website" src="https://img.shields.io/website?down_color=lightred&down_message=Offline&label=Website&up_color=blue&up_message=Online&url=https%3A%2F%2Fnimbexa.cloud%2F"></a>
+  <a  href="https://github.com/Nimbexa/NimbexaClient/stargazers"><img src="https://img.shields.io/github/stars/Nimbexa/NimbexaClient?label=Stars %E2%AD%90" height="20"/></a>
 </p>
 
 ---
@@ -49,10 +49,11 @@
 ---
 
 
-## 👀 Preview
-HolaClient Demo: https://demo.holaclient.io/
+## Join us
+Website: https://nimbexa.cloud/
+Discord: <iframe src="https://ptb.discord.com/widget?id=1140672042803413082&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
-Landing Page (v1.5.7):
+<!-- Landing Page (v1.5.7):
 ![Landing](https://github.com/HolaClient/HolaClient/assets/102372274/1b55d706-b4fb-41f7-a2a9-0f82d21a1a75)
 
 Admin Home (v1.5.7):
@@ -62,30 +63,23 @@ Dashboard (v1.7):
 ![Dashboard](https://github.com/HolaClient/HolaClient/assets/102372274/d0a82c16-4a72-4558-9945-bef4130145f1)
 
 Subdomain (v1.7):
-![Subdomain](https://github.com/HolaClient/HolaClient/assets/102372274/6db15761-a9a5-4c69-95d8-df6020696b37)
+![Subdomain](https://github.com/HolaClient/HolaClient/assets/102372274/6db15761-a9a5-4c69-95d8-df6020696b37) -->
 
 ---
 
 ## ⬇️ Installation
-Refer to our docs made by [**@ItzBenoitXD**](https://github.com/ItzBenoitXD) for manual installation: https://docs.holaclient.tech
-
-... or refer to this video install guide by Arctic Wolf (he did a great job explaining how to install): https://youtu.be/V4FnFKL3nGw
-    
+Developers only mode, if you are a developer then you would know this :>
 ---
 
 ## 📝 Authors
-- [**CR072**](https://github.com/CR072) | Made HolaClient
-- [**ItzBenoitXD**](https://github.com/ItzBenoitXD) | Made HolaClient Docs
+- [**Real trickz**](https://github.com/Realtrickz) | Made Nimbexa
     
 ## ⚖️  Legal
 Please refer "LICENSE" and "CREDITS" files for better understability.
 
 ## 🔗 Links
-- [**YouTube Channel**](https://youtube.com/@holallc)
-- [**Website**](https://holaclient.tech)
-- [**Discord Server**](https://discord.gg/ne8JwpGpX3)
-- [**Holasmp**](https://discord.gg/Dms5dsmVAs)
-- [**Documentation**](https://docs.holaclient.tech)
-- [**HolaClient Demo**](https://demo.holaclient.tech)
-- [**Video Installation**](https://youtu.be/V4FnFKL3nGw)
-- [**lil trailer**](https://www.youtube.com/watch?v=66-wZzYsb-w&pp=ygUKaG9sYWNsaWVudA%3D%3D)
+<!-- - [**YouTube Channel**](https://youtube.com/) -->
+- [**Website**](https://nimbexa.cloud)
+- [**Discord Server**](https://discord.gg/WXHnnpejNm)
+<!-- - [**Documentation**]() -->
+<!-- - [**trailer**](https://www.youtube.com/watch) -->

@@ -1,33 +1,33 @@
 {
   "version": "1.5.7",
-  "note": "If you face any errors or any type of difficulties, please contact Nimbexa's support @ https://discord.gg/https://discord.gg/WXHnnpejNm",
+  "note": "If you face any errors or any type of difficulties, please contact Nimbexa's support @ https://discord.gg/WXHnnpejNm",
 
   "settings starts from here": "start configuring and thank-you for using NimbexaClient!",
   "name": "Nimbexa",
-  "logo": "https://media.discordapp.net/attachments/1082632266506850344/1108449684709703770/image.png",
+  "logo": "https://media.discordapp.net/attachments/887305445302206464/1147445568696746014/Logo.png",
   "rotatelogo": true,
   "rotatespeed": "6s",
   "background": "/cdn/background.jpg",
   "suggested background 1 ": "https://wallpaperaccess.com/full/2825704.gif",
-  "suggested background 2": "https://media.discordapp.net/attachments/1108054221456146534/1127195750158323755/holaclient-custom.gif",
+  "suggested background 2": "https://media.discordapp.net/attachments/1133329685795835954/1147446054728499220/nimbexa-custom.gif",
   "defaulttheme": "default",
-  "discord": "https://discord.gg/CvqRH9TrYK",
+  "discord": "https://discord.gg/WXHnnpejNm",
   "website": {
     "port": 2000,
     "description": "IDK what a good descrption looks like",
     "websitelinkenabled": true,
-    "websitelink": "https://holaclient.tech",
+    "websitelink": "https://nimbexa.cloud",
     "secret": "RANDOM",
     "note": "Do not change the secret, it will automatically be updated!"
   },
   "pterodactyl": {
-    "domain": "https://",
-    "key": "ptla_",
-    "account_key": "ptlc_"
+    "domain": "https://panel.nimbexa.cloud",
+    "key": "ptla_", // vps
+    "account_key": "ptlc_" // vps
   },
   "news": {
     "enabled": true,
-    "content": "Hi, Welcome to HolaClient!"
+    "content": "Hi, Welcome to Nimbexa!"
   },
   "anti_pteroVM": {
     "enabled": true,
@@ -35,11 +35,11 @@
     "note": "The above value must be in minutes."
   },
   "captcha": {
-    "enabled": false,
-    "site_key": ""
+    "enabled": false, // true = captcha will be enabled
+    "site_key": "" // uh ofc key
   },
   "purge": {
-    "enabled": false,
+    "enabled": false, // default: false
     "keyword": "[Active]"
   },
   "status": {
@@ -50,16 +50,16 @@
   "maintenance": {
     "status": false,
     "admins": [
-      "testify@holaclient.tech",
-      "example@gmail.com"
+      "isamismail8273@gmail.com",
+      "admin@nimbexa.cloud"
     ]
   },
   "daily": {
     "enabled": true,
-    "coins": "20"
+    "coins": "20" // daily reward
   },
   "linkvertise": {
-    "enabled": true,
+    "enabled": true, // some moneyyy
     "userid": "641981",
     "coins": 5,
     "dailyLimit": "null",
@@ -209,46 +209,11 @@
     },
     "ads": [
       {
-        "name": "HolaClient",
-        "title": "HolaClient",
-        "redirect": "https://holaclient.tech",
-        "image": "https://media.discordapp.net/attachments/1108054221456146534/1117779127680905226/Untitled.png?width=470&height=110",
+        "name": "Nimbexa",
+        "title": "Nimbexa Cloud",
+        "redirect": "https://nimbexa.cloud",
+        "image": "https://media.discordapp.net/attachments/887305445302206464/1147445568696746014/Logo.png?width=470&height=130",
         "note": "recommened image size is 470x130"
-      },
-      {
-        "name": "HolaClient",
-        "title": "HolaClient",
-        "redirect": "https://holaclient.tech",
-        "image": "https://media.discordapp.net/attachments/1108054221456146534/1117779127680905226/Untitled.png?width=470&height=105",
-        "note": "recommened image size is 470x105"
-      },
-      {
-        "name": "HolaClient",
-        "title": "HolaClient",
-        "redirect": "https://holaclient.tech",
-        "image": "https://media.discordapp.net/attachments/1108054221456146534/1117779127680905226/Untitled.png?width=470&height=105",
-        "note": "recommened image size is 470x105"
-      },
-      {
-        "name": "HolaClient",
-        "title": "HolaClient",
-        "redirect": "https://holaclient.tech",
-        "image": "https://media.discordapp.net/attachments/1108054221456146534/1117779127680905226/Untitled.png?width=470&height=105",
-        "note": "recommened image size is 470x105"
-      },
-      {
-        "name": "HolaClient",
-        "title": "HolaClient",
-        "redirect": "https://holaclient.tech",
-        "image": "https://media.discordapp.net/attachments/1108054221456146534/1117779127680905226/Untitled.png?width=470&height=220",
-        "note": "recommened image size is 470x220"
-      },
-      {
-        "name": "HolaClient",
-        "title": "HolaClient",
-        "redirect": "https://discord.gg/nexorion",
-        "image": "https://media.discordapp.net/attachments/1135147336771850250/1135462020246945832/image.png?width=1440&height=320",
-        "note": "recommened image size is 1100x290"
       }
     ]
   },
@@ -263,37 +228,25 @@
         "enabled": true,
         "ads": [
           {
-            "name": "Holasmp",
-            "invite": "https://discord.gg/Dms5dsmVAs",
-            "id": "977112336873697310",
-            "coins": 500
-          },
-          {
-            "name": "HolaClient",
-            "invite": "https://discord.gg/CvqRH9TrYK",
-            "id": "1038719273658499072",
-            "coins": 500
-          },
-          {
-            "name": "HostingConnect",
-            "invite": "https://discord.gg/WA4p64Zufq",
-            "id": "1061893392503685120",
-            "coins": 500
+            "name": "Nimbexa",
+            "invite": "https://discord.gg/WXHnnpejNm",
+            "id": "1140672042803413082",
+            "coins": 10
           }
         ]
       },
       "bot": {
-        "enabled": false,
-        "token": "",
-        "clientID": "",
-        "ownerID": "",
-        "adminRoleID": "",
-        "guildID": "",
+        "enabled": true,
+        "token": "", // REQUIRED
+        "clientID": "", // REQUIRED
+        "ownerID": "", // REQUIRED
+        "adminRoleID": "", // REQUIRED
+        "guildID": "", // REQUIRED
         "joinguild": {
           "_comment": "Set this to true if you want to make users forcefully join your server.",
           "enabled": false,
           "guildid": [
-            "Discord_Server_ID"
+            "1140672042803413082"
           ]
         }
       },
