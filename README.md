@@ -51,7 +51,6 @@
 
 ## Join us
 Website: https://nimbexa.cloud/
-Discord: https://ptb.discord.com/api/guilds/1140672042803413082/widget.json
 
 <!-- Landing Page (v1.5.7):
 ![Landing](https://github.com/HolaClient/HolaClient/assets/102372274/1b55d706-b4fb-41f7-a2a9-0f82d21a1a75)
