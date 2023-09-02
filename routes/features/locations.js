@@ -58,7 +58,7 @@ module.exports.load = async function (app, db) {
             console.log(
               chalk.gray("[📍]") +
                 chalk.cyan("[") +
-                chalk.white("HolaClient") +
+                chalk.white("Nimbexa") +
                 chalk.cyan("]") +
                 chalk.white(" Successfully configured all locations ")
             );

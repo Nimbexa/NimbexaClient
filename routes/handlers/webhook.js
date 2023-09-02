@@ -20,7 +20,7 @@ module.exports = (action, message) => {
             'content-type': 'application/json'
         },
         body: JSON.stringify({
-            username: "HolaClient",
+            username: "Nimbexa",
             avatar_url: "https://media.discordapp.net/attachments/1082636619804323860/1115601102344298636/image.png?width=621&height=580",
             embeds: [
                 {
@@ -28,7 +28,7 @@ module.exports = (action, message) => {
                     title: `\`${action}\``,
                     description: message,
                     author: {
-                        name: 'HolaClient'
+                        name: 'Nimbexa'
                     },
                     thumbnail: {
                         url: settings.logo

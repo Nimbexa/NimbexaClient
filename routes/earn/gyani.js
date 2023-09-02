@@ -39,7 +39,7 @@ module.exports.load = async function (app, db) {
     const alias = generateUserCode()
 
     try {
-      const response = await fetch(`https://gyanilinks.com/api?api=${settings.gyanilinks.apiKey}&url=${encodeURIComponent(link)}&alias=holaclient${alias}`);
+      const response = await fetch(`https://gyanilinks.com/api?api=${settings.gyanilinks.apiKey}&url=${encodeURIComponent(link)}&alias=Nimbexa${alias}`);
       const data = await response.json();
       if (response.ok) {
         res.json({ link: data.shortenedUrl });

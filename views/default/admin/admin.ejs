@@ -202,10 +202,10 @@
               <div class="col-lg-6">
                 <div class="card">
                   <div class="card-body">
-                    <div class="card-title">HolaClient</div>
+                    <div class="card-title">Nimbexa</div>
                     <hr>
                     <div class="form-group">
-                      <p>HolaClient by CR072</p><br>
+                      <p>Nimbexa by Realtrickz</p><br>
                       <span id="latest">Fetching...</span>
                     </div>
                   </div>
@@ -217,7 +217,7 @@
                     .then(response => response.json())
                     .then(json => {
                       const isUpToDate = json.latest === json.current;
-                      document.getElementById("latest").innerHTML = `Current Version: v<%= settings.version %> <br>Latest Version: ${json.latest}<br>${isUpToDate ? 'HolaClient is up-to-date.' : '<b>HolaClient is not up-to-date!</b>'}`;
+                      document.getElementById("latest").innerHTML = `Current Version: v<%= settings.version %> <br>Latest Version: ${json.latest}<br>${isUpToDate ? 'Nimbexa is up-to-date.' : '<b>Nimbexa is not up-to-date!</b>'}`;
 
                       if (!isUpToDate) {
                         alertAdmin();
@@ -226,7 +226,7 @@
                 }
 
                 function alertAdmin() {
-                  toastr.warning('Please keep your HolaClient up-to-date, as using older versions could potentially pose a security threat.', 'Update Available!');
+                  toastr.warning('Please keep your Nimbexa up-to-date, as using older versions could potentially pose a security threat.', 'Update Available!');
                 }
 
                 getversion();

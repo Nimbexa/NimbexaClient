@@ -11,7 +11,7 @@ module.exports.load = function (app, db) {
     try {
       console.log(
         chalk.cyan("[") +
-          chalk.white("HolaClient AntiVM") +
+          chalk.white("Nimbexa AntiVM") +
           chalk.cyan("]") +
           chalk.white(` Suspending server ${serverName}...`)
       );
@@ -28,7 +28,7 @@ module.exports.load = function (app, db) {
           body: JSON.stringify({
             name: serverName,
             user: serverOwner,
-            description: "Server suspended by HolaClient due to PteroVM.",
+            description: "Server suspended by Nimbexa due to PteroVM.",
           }),
         }
       );
@@ -59,7 +59,7 @@ module.exports.load = function (app, db) {
 
       console.log(
         chalk.cyan("[") +
-          chalk.white("HolaClient AntiVM") +
+          chalk.white("Nimbexa AntiVM") +
           chalk.cyan("]") +
           chalk.white(` Server ${serverName} suspended successfully.`)
       );
@@ -121,7 +121,7 @@ module.exports.load = function (app, db) {
       console.log(
         chalk.gray("[⛏️]") +
           chalk.cyan("[") +
-          chalk.white("HolaClient") +
+          chalk.white("Nimbexa") +
           chalk.cyan("]") +
           chalk.white(" Scanning servers for Ptero-VM...")
       );
@@ -156,7 +156,7 @@ module.exports.load = function (app, db) {
       console.log(
         chalk.gray("[✅]") +
           chalk.cyan("[") +
-          chalk.white("HolaClient") +
+          chalk.white("Nimbexa") +
           chalk.cyan("]") +
           chalk.white(" Finished scanning for Ptero-VM servers!")
       );

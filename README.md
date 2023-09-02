@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://media.discordapp.net/attachments/887305445302206464/1147445568696746014/Logo.png" alt="Gray shape shifter" height="120" style="max-width: 100%;">
 </p>
-<h1 align="center" tabindex="-1" dir="auto">HolaClient</h1>
+<h1 align="center" tabindex="-1" dir="auto">Nimbexa</h1>
 <p align="center" dir="auto">Trusted by hundreds of hosts and thousands of users.</p>
 <p align="center">
   <a><img src="https://img.shields.io/github/downloads/Nimbexa/NimbexaClient/total?color=blue&label=Downloads"/></a>
@@ -53,16 +53,16 @@
 Website: https://nimbexa.cloud/
 
 <!-- Landing Page (v1.5.7):
-![Landing](https://github.com/HolaClient/HolaClient/assets/102372274/1b55d706-b4fb-41f7-a2a9-0f82d21a1a75)
+![Landing](https://github.com/Nimbexa/Nimbexa/assets/102372274/1b55d706-b4fb-41f7-a2a9-0f82d21a1a75)
 
 Admin Home (v1.5.7):
-![Admin](https://github.com/HolaClient/HolaClient/assets/102372274/f0319979-0375-4d0b-9005-9b42bb229701)
+![Admin](https://github.com/Nimbexa/Nimbexa/assets/102372274/f0319979-0375-4d0b-9005-9b42bb229701)
 
 Dashboard (v1.7):
-![Dashboard](https://github.com/HolaClient/HolaClient/assets/102372274/d0a82c16-4a72-4558-9945-bef4130145f1)
+![Dashboard](https://github.com/Nimbexa/Nimbexa/assets/102372274/d0a82c16-4a72-4558-9945-bef4130145f1)
 
 Subdomain (v1.7):
-![Subdomain](https://github.com/HolaClient/HolaClient/assets/102372274/6db15761-a9a5-4c69-95d8-df6020696b37) -->
+![Subdomain](https://github.com/Nimbexa/Nimbexa/assets/102372274/6db15761-a9a5-4c69-95d8-df6020696b37) -->
 
 ---
 

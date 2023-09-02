@@ -1,9 +1,9 @@
 {
-  "name": "holaclient",
-  "version": "1.5.5",
+  "name": "nimbexa",
+  "version": "1.0.0",
   "main": "index.js",
-  "author": "Hola LLC",
-  "github": "https://github.com/CR072/HolaClient",
+  "author": "Real trickz",
+  "github": "https://github.com/Nimbexa",
   "discord": "https://discord.gg/CvqRH9TrYK",
   "license": "MIT",
   "dependencies": {

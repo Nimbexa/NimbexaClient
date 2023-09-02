@@ -17,7 +17,7 @@ module.exports.load = async function(app, db) {
     res.send(`
     <html>
     <head>
-        <title>HolaClient v1.5.7</title>
+        <title>Nimbexa v1.5.7</title>
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body class="bg-gradient-to-b from-slate-900 to-black">
@@ -59,8 +59,8 @@ module.exports.load = async function(app, db) {
     <main class="grid min-h-screen place-content-center place-items-center overflow-hidden">
       <div id="main_container" 
       class="relative grid place-content-center place-items-center gap-2 before:bg-gradient-to-t before:from-teal-500/70 before:via-fuchsia-600 before:to-transparent before:blur-xl before:filter">
-      <a href="https://holaclient.tech" target="blank" class="bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] bg-clip-text text-6xl font-bold leading-[1.2] tracking-tighter text-transparent">
-        HolaClient <br><span class="text-white">by</span> CR072
+      <a href="https://nimbexa.tech" target="blank" class="bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] bg-clip-text text-6xl font-bold leading-[1.2] tracking-tighter text-transparent">
+        Nimbexa <br><span class="text-white">by</span> Realtrickz
       </a>
       </div>
     </main>

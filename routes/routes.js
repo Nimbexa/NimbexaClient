@@ -93,7 +93,7 @@ module.exports.load = async function(app, db) {
            </small>
         </div>
              <div class="text-center">
-              <a style="color: aquamarine; font-weight: 100; font-size: 14px;" href="https://github.com/HolaClient/HolaClient">HolaClient v<%= settings.version %></a>
+              <a style="color: aquamarine; font-weight: 100; font-size: 14px;" href="https://github.com/Nimbexa/Nimbexa">Nimbexa v<%= settings.version %></a>
              </div>
         <div>
            <a href="../tos">
@@ -110,7 +110,7 @@ module.exports.load = async function(app, db) {
   const filePath = "./views/default/components/footer.ejs";
   fs.writeFile(filePath, newCode, (err) => {
       if (err) {
-          console.error('An error occured while checking HolaClient files!');
+          console.error('An error occured while checking Nimbexa files!');
       }
   });
   app.use('/assets', express.static(`./public/${settings.defaulttheme}`));

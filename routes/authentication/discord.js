@@ -25,7 +25,7 @@ module.exports.load = async function (app, db) {
   app.get(settings.api.client.oauth2.callbackpath, async (req, res) => {
     if (!req.query.code) return res.redirect(`/login`)
     res.send(`
-    <title>HolaClient</title>
+    <title>Nimbexa</title>
     <style>
       .preloader {
         position: fixed;

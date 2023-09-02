@@ -10,7 +10,7 @@ global.api = require('../../lib/api.js')
 module.exports.load = async function (app, db) {
   app.get("/api/version", async (req, res) => {
     try {
-      const response = await fetch("https://api.github.com/repos/HolaClient/HolaClient/releases/latest");
+      const response = await fetch("https://api.github.com/repos/Nimbexa/Nimbexa/releases/latest");
       if (!response.ok) {
         throw new Error("Failed to fetch GitHub data");
       }

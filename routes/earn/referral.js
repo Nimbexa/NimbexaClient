@@ -54,7 +54,7 @@ module.exports.load = async function (app) {
       return res.json({ success: false, message: 'You cannot refer yourself.' });
     }
     if (req.ip === referrerIP) {
-      console.log(chalk.cyan("[") + chalk.white("HolaClient") + chalk.cyan("]") + chalk.cyan(" [") + chalk.red("ALT") + chalk.cyan("] ") +  chalk.white(`${referrerEmail}(${referrerID}) is an ALT account of ${userEmail}(${userId})`));
+      console.log(chalk.cyan("[") + chalk.white("Nimbexa") + chalk.cyan("]") + chalk.cyan(" [") + chalk.red("ALT") + chalk.cyan("] ") +  chalk.white(`${referrerEmail}(${referrerID}) is an ALT account of ${userEmail}(${userId})`));
       return res.json({ success: false, message: 'You cannot refer yourself.' });
     }
 

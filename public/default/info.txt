@@ -6,10 +6,10 @@
  |_|  |_|\___/|_|\__,_|\_____|_|_|\___|_| |_|\__|
                                                  
 /====================\/====================\
-| HolaClient Assets  || HolaClient Assets  |
+| Nimbexa Assets  || Nimbexa Assets  |
 | Based on Dashtreme || Based on Bootstrap |
 \====================/\====================/
 /====================\/====================\
-| HolaClient Assets  || HolaClient Assets  |
+| Nimbexa Assets  || Nimbexa Assets  |
 | Based on Tailwind  || Based on FlagsAPI  |
 \====================/\====================/

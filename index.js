@@ -2,18 +2,18 @@
 
 const chalk = require("chalk");
 //console.clear();
-////console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("HolaClient") + chalk.cyan("]") + chalk.white(" ------+ Loading Packages... "));
+////console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("Nimbexa") + chalk.cyan("]") + chalk.white(" ------+ Loading Packages... "));
 const fs = require("fs");
 const fetch = require('node-fetch');
 const path = require('path');
 const log = require('./routes/handlers/webhook')
 const arciotext = require('./routes/handlers/arciotext')
 global.debuglog = require('./lib/debug');
-//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("HolaClient") + chalk.cyan("]") + chalk.white(" Packages Loaded ✔️ "));
+//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("Nimbexa") + chalk.cyan("]") + chalk.white(" Packages Loaded ✔️ "));
 //console.log(" ");
-//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("HolaClient") + chalk.cyan("]") + chalk.white(" ------+ Loading Settings... "));
+//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("Nimbexa") + chalk.cyan("]") + chalk.white(" ------+ Loading Settings... "));
 const settings = require("./settings.json");
-//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("HolaClient") + chalk.cyan("]") + chalk.white(" Settings Loaded ✔️ "));
+//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("Nimbexa") + chalk.cyan("]") + chalk.white(" Settings Loaded ✔️ "));
 //console.log(" ");
 const defaultthemesettings = {
     index: "index.ejs",
@@ -65,7 +65,7 @@ module.exports.renderdataeval =
 
     return renderdata;
   })();`;
-//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("HolaClient") + chalk.cyan("]") + chalk.white(" ------+ Loading Database... "));
+//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("Nimbexa") + chalk.cyan("]") + chalk.white(" ------+ Loading Database... "));
 const Keyv = require("keyv");
 const crypto = require('crypto');
 const db = new Keyv("sqlite://storage/databases/db.sqlite");
@@ -93,21 +93,21 @@ db.on('error', err => {
 module.exports.db = db;
 module.exports.storeData = storeData;
 module.exports.retrieveData = retrieveData;
-//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("HolaClient") + chalk.cyan("]") + chalk.white(" Database Loaded ✔️ "));
+//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("Nimbexa") + chalk.cyan("]") + chalk.white(" Database Loaded ✔️ "));
 console.log(" ");
-//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("HolaClient") + chalk.cyan("]") + chalk.white(" ------+ Loading Web Files... "));
+//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("Nimbexa") + chalk.cyan("]") + chalk.white(" ------+ Loading Web Files... "));
 const express = require("express");
 const app = express();
 require('express-ws')(app);
-//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("HolaClient") + chalk.cyan("]") + chalk.white(" WebFiles Loaded ✔️ "));
+//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("Nimbexa") + chalk.cyan("]") + chalk.white(" WebFiles Loaded ✔️ "));
 //console.log(" ");
-//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("HolaClient") + chalk.cyan("]") + chalk.white(" ------+ Loading Addons... "));
+//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("Nimbexa") + chalk.cyan("]") + chalk.white(" ------+ Loading Addons... "));
 const ejs = require("ejs");
 const session = require("express-session");
 const indexjs = require("./index.js");
-//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("HolaClient") + chalk.cyan("]") + chalk.white(" Addons   Loaded ✔️ "));
+//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("Nimbexa") + chalk.cyan("]") + chalk.white(" Addons   Loaded ✔️ "));
 //console.log(" ");
-//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("HolaClient") + chalk.cyan("]") + chalk.white(" ------+ Loading Website... "));
+//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("Nimbexa") + chalk.cyan("]") + chalk.white(" ------+ Loading Website... "));
 function generateRandomKey(length) {
   const characters =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -139,9 +139,9 @@ app.use(express.json({
     type: 'application/json',
     verify: undefined
 }));
-//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("HolaClient") + chalk.cyan("]") + chalk.white(" Web View Loaded ✔️ "));
+//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("Nimbexa") + chalk.cyan("]") + chalk.white(" Web View Loaded ✔️ "));
 //console.log(" ");
-//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("HolaClient") + chalk.cyan("]") + chalk.white(" ------+ Loading APIs... "));
+//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("Nimbexa") + chalk.cyan("]") + chalk.white(" ------+ Loading APIs... "));
 function loadRoute(directory, app, db) {
     const files = fs.readdirSync(directory).filter(file => file.endsWith('.js'));
     files.forEach(file => {
@@ -164,7 +164,7 @@ loadRoute(path.join(__dirname, 'routes', 'controller'), app, db);
 loadRoute(path.join(__dirname, 'routes', 'users'), app, db);
 loadRoute(path.join(__dirname, 'routes', 'features'), app, db);
 //console.log(" ");
-//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("HolaClient") + chalk.cyan("]") + chalk.white(" ------+ Finalizing... "));
+//console.log(chalk.gray("+ ") + chalk.cyan("[") + chalk.white("Nimbexa") + chalk.cyan("]") + chalk.white(" ------+ Finalizing... "));
 if (settings.api.client.api.code === 'RANDOM') {
   const length = 24;
   const characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
@@ -178,22 +178,47 @@ if (settings.api.client.api.code === 'RANDOM') {
 const listener = app.listen(settings.website.port, function() {
     console.clear()
     console.log(chalk.gray("  "));
-    console.log("  _    _       _        _____ _ _            _   ");
-    console.log(" | |  | |     | |      / ____| (_)          | |  ");
-    console.log(" | |__| | ___ | | __ _| |    | |_  ___ _ __ | |_ ");
-    console.log(" |  __  |/ _ \\| |/ _` | |    | | |/ _ \\ '_ \\| __|");
-    console.log(" | |  | | (_) | | (_| | |____| | |  __/ | | | |_ ");
-    console.log(" |_|  |_|\\___/|_|\\__,_|\\_____|_|_|\\___|_| |_|\\__|");
+    console.log(`,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,   
+    ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,..........,,
+   ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,............,
+   ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.,...........,
+   ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.............,
+   ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.............,
+   ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.............,
+   ,,,,,,,,,,,,,,,,,,,,,.........,,,,,,,,,,,,,,,,,,,,.....,.....,,,,..............,
+   ,,,,,,,,,,,,,,,,,,,...&&&&&&&...,,,,,,,,,,,,,,,,...&&&&&&&&#..,,,..............,
+   ,,,,,,,,,,,,,,,,,,...&&&&&&&&&&...,,,,,,,,,,,,,,..#&&&&&&&&&...,,..............,
+   ,,,,,,,,,,,,,,,,,,,..&&&&&&&&&&&&&...,,,,,,,,,,,..#&&&&&&&&&...................,
+   ,,,,,,,,,,,,,,,,,,,%...&&&&&&&&&&&&&...,,,,,,,,,..#&&&&&&&&&...................,
+   ,,,,,,,,,,,,,,,,,,,%&&...&&&&&&&&&&&&&...,,,,,,,..#&&&&&&&&&...................,
+   ,,,,,,,,,,,,,,,,,,,%&&&&...&&&&&&&&&&&&&(...,,,,..#&&&&&&&&&...................,
+   ,,,,,,,,,,,,,,,,,,,%&&&&&&*..*&&&&&&&&&&&&&...,,..#&&&&&&&&&...................,
+   ,,,,,,,,,,,,,,,,,,.%&&&&&&&&&...&&&&&&&&&&&&&.....#&&&&&&&&&...................,
+   ,,,,,,,,,,,,,,,,,,.%&&&&&&&&&.....&&&&&&&&&&&&&...(&&&&&&&&&...................,
+   ,,,,,,,,,,,,,,,,,,.%&&&&&&&&&..,,...#&&&&&&&&&&&&&...&&&&&&&...................,
+   ,.,,,,,,,,,,,,,,,,.%&&&&&&&&&..,,,,,...&&&&&&&&&&&&&...&&&&&....................
+   ..,,,,,,,,,,,,,,,,.%&&&&&&&&&..,,,,,,,...&&&&&&&&&&&&&...%&&....................
+   ..,,,,,,,,,,,,,,,,.%&&&&&&&&&..,,,,,,,,,...&&&&&&&&&&&&&(.......................
+   ..,,,,,,,,,,,,,,,,.%&&&&&&&&&..,,,,,,,,,,,...,&&&&&&&&&&&&&.....................
+   ..,,,,,,,,,,,,,,,,.%&&&&&&&&&..,,,,,,,,,,,,,,...&&&&&&&&&&&&&...................
+   ..,,,,,,,,,,,,,,,,..&&&&&&&&&..,,,,,,,,,,,,,,,,...&&&&&&&&&&&...................
+   ..,,,,,,,,,,,,,,,,,..&&&&&&*..,,,,,,,,,,,,,,,,,,,...#&&&&&&&#...................
+   ..,,,,,,,,,,,,,,,,,,,,,...,,,,,,,,,,,,,,,,,,,,,,,,,,............................
+   ..,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.........................
+   ..,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.........................
+   ..,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,..........................
+   ..,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,..........................
+   ..,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,...........................
+    ..,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,..........................`)
     console.log(chalk.white(" "))
     console.log(chalk.white("=====================SOCIAL======================"));
-    console.log(chalk.gray("[+] ") + chalk.white("[") + chalk.cyan("Discord") + chalk.white("]") + chalk.white(" https://discord.gg/CvqRH9TrYK "));
-    console.log(chalk.gray("[+] ") + chalk.white("[") + chalk.cyan("Github ") + chalk.white("]") + chalk.white(" https://github.com/CR072/HolaClient "));
-    console.log(chalk.gray("[+] ") + chalk.white("[") + chalk.cyan("Holasmp") + chalk.white("]") + chalk.white(" https://discord.gg/Dms5dsmVAs "));
+    console.log(chalk.gray("[+] ") + chalk.white("[") + chalk.cyan("Discord") + chalk.white("]") + chalk.white(" https://discord.gg/WXHnnpejNm "));
+    console.log(chalk.gray("[+] ") + chalk.white("[") + chalk.cyan("Github ") + chalk.white("]") + chalk.white(" https://github.com/Realtrickz/ "));
     console.log(chalk.white("================================================="));
     console.log(" ");
-    console.log(chalk.gray("[🔗]") + chalk.cyan("[") + chalk.white("HolaClient") + chalk.cyan("]") + chalk.white(" Successfully loaded HolaClient at ") + chalk.cyan(settings.api.client.oauth2.link + "/"));
+    console.log(chalk.gray("[🔗]") + chalk.cyan("[") + chalk.white("Nimbexa") + chalk.cyan("]") + chalk.white(" Successfully loaded Nimbexa at ") + chalk.cyan(settings.api.client.oauth2.link + "/"));
     console.log(" ");
-    console.log(chalk.gray("[⌚]") + chalk.cyan("[") + chalk.white("HolaClient") + chalk.cyan("]") + chalk.white(" Successfully saved uptime status "));
+    console.log(chalk.gray("[⌚]") + chalk.cyan("[") + chalk.white("Nimbexa") + chalk.cyan("]") + chalk.white(" Successfully saved uptime status "));
     console.log(" ");
     if (settings.security.enabled === true) {
         if (settings.security.anti_ddos.enabled === true) {
@@ -220,7 +245,7 @@ const newCode = `
          </small>
       </div>
            <div class="text-center">
-            <a style="color: aquamarine; font-weight: 100; font-size: 14px;" href="https://github.com/HolaClient/HolaClient">HolaClient v<%= settings.version %></a>
+            <a style="color: aquamarine; font-weight: 100; font-size: 14px;" href="https://github.com/Nimbexa/Nimbexa">Nimbexa v<%= settings.version %></a>
            </div>
       <div>
          <a href="../tos">
@@ -236,9 +261,9 @@ const newCode = `
 const filePath = "./views/default/components/footer.ejs";
 fs.writeFile(filePath, newCode, (err) => {
     if (err) {
-        console.error('An error occured while checking HolaClient files!');
+        console.error('An error occured while checking Nimbexa files!');
     } else {
-        console.log(chalk.gray("[📂]") + chalk.cyan("[") + chalk.white("HolaClient") + chalk.cyan("]") + chalk.white(" Successfully scanned all HolaClient's files "));
+        console.log(chalk.gray("[📂]") + chalk.cyan("[") + chalk.white("Nimbexa") + chalk.cyan("]") + chalk.white(" Successfully scanned all Nimbexa's files "));
     }
 });
 var cache = false;
@@ -413,7 +438,7 @@ module.exports.get = function(req) {
         name: name
     };
 };
-log('status', `Successfully loaded HolaClient at ${settings.api.client.oauth2.link}/`)
+log('status', `Successfully loaded Nimbexa at ${settings.api.client.oauth2.link}/`)
 module.exports.islimited = async function() {
     return cache == true ? false : true;
 }

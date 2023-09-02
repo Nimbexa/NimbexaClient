@@ -6,7 +6,7 @@ module.exports.load = async function(app, db) {
         try {
           const email = req.params.email;
           if (email !== req.session.userinfo.email) {
-            return res.json({ "message": "wat da haillllll, you got da B+, I beat yo a** dumbass mother fucker thought that HolaClient is so unsecure to leak that user's useinfo huh?" });
+            return res.json({ "message": "wat da haillllll, you got da B+, I beat yo a** dumbass mother fucker thought that Nimbexa is so unsecure to leak that user's useinfo huh?" });
           }
       
           const packagename = await db.get("package-" + email);

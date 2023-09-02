@@ -33,7 +33,7 @@ app.get('/pay', (req, res) => {
           total: String(amount),
           currency: `${settings.billing.currency}`,
         },
-        description: 'Payment processed by HolaClient',
+        description: 'Payment processed by Nimbexa',
       }],
     };
     console.log("GATE 2")

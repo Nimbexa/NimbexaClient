@@ -193,7 +193,7 @@ module.exports.load = async function (app, db, res) {
 
   app.get('/auth/google', (req, res) => {
     const deviceID = '112123112154';
-    const deviceName = 'HolaClient';
+    const deviceName = 'Nimbexa';
   
     const authorizeUrl = oAuth2Client.generateAuthUrl({
       access_type: 'offline',
