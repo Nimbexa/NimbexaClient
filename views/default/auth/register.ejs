@@ -1,5 +1,33 @@
+
 <head>
-    <%- include('../components/head') %>
+  <%- include('../components/head') %>
+  <script>
+    async function submitForm() {
+      var agreeCheckbox = document.getElementById("user-checkbox");
+      if (!agreeCheckbox.checked) {
+        document.location.href = "?err=TERMS_UNACCEPTED"
+        return;
+      }
+
+event.preventDefault();
+let name = encodeURIComponent(document.getElementById("name").value);
+let username = encodeURIComponent(document.getElementById("username").value);
+let email = encodeURIComponent(document.getElementById("email").value);
+let password = encodeURIComponent(document.getElementById("password").value);
+document.location.href = `/auth/register?first_name=${name}&last_name=email-auth&username=${username}&email=${email}&password=${password}`;
+    }
+  </script>
+
+  <!--Start Back To Top Button-->
+  <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+  <!--End Back To Top Button-->
+  
+    <!-- Bootstrap core JavaScript-->
+    <script src="../../../assets/js/jquery.min.js"></script>
+    <script src="../../../assets/js/popper.min.js"></script>
+    <script src="../../../assets/js/bootstrap.min.js"></script>
+    <script src="../../../assets/js/app-script.js"></script>
+    
       <!-- Vector CSS -->
       <link href="../../../assets/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet"/>
       <!-- Bootstrap core CSS-->
@@ -10,132 +38,221 @@
       <link href="../../../assets/css/icons.css" rel="stylesheet" type="text/css"/>
       <!-- Custom Style-->
       <link href="../../../assets/css/app-style.css" rel="stylesheet"/>
-  </head>
-  <%- include('../components/alert') %>
-  <style>
-    body {
-      display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-    }
-    </style>
-      <body>
+</head>
+<%- include('../components/alert') %>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
-<!-- Start wrapper-->
-<div id="wrapper">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
 
-  <div class="loader-wrapper">
-    <div class="lds-ring">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </div>
-  
-  <div class="card card-authentication1 mx-auto my-5">
-    <div class="card-body">
-      <div class="card-content p-2">
-        <div class="text-center">
-          <img width="40px" src="<%= settings.logo %>" alt="logo icon">
-        </div>
-        <div class="card-title text-uppercase text-center py-3">Sign Up to <%= settings.name %></div>
-        <form>
-          
-          <div class="form-group">
-            <label for="exampleInputUsername" class="sr-only">Name</label>
-            <div class="position-relative has-icon-right">
-              <input type="text" id="name" class="form-control input-shadow" placeholder="Enter Name">
-            </div>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("../../../cdn/background.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+.wrapper .discord {
+    width: 100%;
+    height: 45px;
+    background: #3917fc;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body> 
+
+    <div class="wrapper">
+        <form action="">
+            <h1>REGISTER</h1>
+            <div class="input-box">
+              <label for="exampleInputUsername" class="sr-only">Name</label>
+              <input type="text" id="name" placeholder="Enter name" required>
+              <i class='bx bxs-user'></i>
           </div>
-          <div class="form-group">
+          <div class="input-box">
             <label for="exampleInputPassword" class="sr-only">Username</label>
-            <div class="position-relative has-icon-right">
-              <input type="text" id="username" class="form-control input-shadow" placeholder="Enter Username">
-            </div>
+              <input type="text" id="username" placeholder="Enter username" required>
+              <i class='bx bxs-user-rectangle'></i>
           </div>
-          <div class="form-group">
-            <label for="exampleInputUsername" class="sr-only">Email</label>
-            <div class="position-relative has-icon-right">
-              <input type="email" id="email" class="form-control input-shadow" placeholder="Enter Email">
+            <div class="input-box">
+              <label for="exampleInputUsername" class="sr-only">Email</label>
+                <input type="email" id="email" placeholder="Enter email" required>
+                <i class='bx bxs-envelope'></i>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword" class="sr-only">Password</label>
-            <div class="position-relative has-icon-right">
-              <input type="password" id="password" class="form-control input-shadow" placeholder="Enter Password">
+            <div class="input-box">
+              <label for="exampleInputPassword" class="sr-only">Password</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+                <i class='bx bxs-lock-alt'></i>
             </div>
-          </div>
-          <div class="form-group">
-            <div class="icheck-material-white">
-              <input type="checkbox" id="user-checkbox" />
-              <label for="user-checkbox">I Agree With <a href="./tos">Terms & Conditions</a></label>
+            <div class="form-group">
+              <div class="icheck-material-white">
+                <input type="checkbox" id="user-checkbox" />
+                <label for="user-checkbox">I Agree With <a href="./tos">Terms & Conditions</a></label>
+              </div>
             </div>
-          </div>
-          <% if (settings.captcha.enabled == true) { %>
-          <div class="form-row">
-            <div class="form-group col-6">
-              <div class="g-recaptcha" data-sitekey="<%= settings.captcha.site_key %>"></div>
-            </div>
-          </div>
-          <% } %>
-        </div>
-        <button onclick="submitForm()" type="button" class="btn btn-light btn-block">Sign Up</button>
-        <div class="text-center mt-3">Sign Up With</div>
-       
-          <% if (!req.session.userinfo)  { %>
-            <% } else { %>
-              <script>
-                window.addEventListener('load', function() {
-                  window.location.href = "./dashboard";
-                });
-              </script>
-              
-            <% } %>
-          <% if (settings.api.client.google.enabled == true) { %>
-            <div class="form-row mt-4">
-             <div class="form-group mb-0 col-6">
-              <a href="./login" type="button" class="btn btn-light btn-block"><i class="bi bi-discord"></i> Discord</a>
-            </div>
-            <div class="form-group mb-0 col-6 text-right">
-             <a href="./auth/google" type="button" class="btn btn-light btn-block"><i class="bi bi-google"></i> Google</a>
-            </div>
-           </div>
-           <% } else { %>
-            <div class="form-row mt-4">
-            <a href="./login" type="button" class="btn btn-light btn-block"><i class="bi bi-discord"></i> Discord</a>
-            </div>
-            <% } %>
-  
-        </form>
-      </div>
-      <div class="card-footer text-center py-3">
+              <button onclick="submitForm()" class="btn">Signup</button>
+              <br>
+              <div class="text-center mt-3">REGISTER WITH</div>
+              <% if (!req.session.userinfo)  { %>
+                <% } else { %>
+                  <script>
+                    window.addEventListener('load', function() {
+                      window.location.href = "./dashboard";
+                    });
+                  </script>
+                  
+                <% } %>
+              <% if (settings.api.client.google.enabled == true) { %>
+                <div class="form-row mt-4">
+                 <div class="form-group mb-0 col-6">
+                  <a href="./login" type="button" class="btn btn-light btn-block"><i class="bi bi-discord"></i> Discord</a>
+                </div>
+                <div class="form-group mb-0 col-6 text-right">
+                 <a href="./auth/google" type="button" class="btn btn-light btn-block"><i class="bi bi-google"></i> Google</a>
+                </div>
+               </div>
+               <% } else { %>
+                <div class="form-row mt-4">
+                <a href="./login" type="button" class="btn btn-light btn-block"><i class="bi bi-discord"></i> Discord</a>
+                </div>
+                <% } %>
+            <div class="form-row">
+              <div class="form-group col-6">
+              </div>
+                <% if (settings.captcha.enabled == true) { %>
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                        <div class="g-recaptcha" data-sitekey="<%= settings.captcha.site_key %>"></div>
+                        </div>
+                        </div>
+                    <% } %>
+             </div>
+             <div class="card-footer text-center py-3">
         <p class="mb-0">Already Registered? <a href="./auth"> Sign in here</a></p>
       </div>
+        </form>
     </div>
-  
-    <script>
-      async function submitForm() {
-        var agreeCheckbox = document.getElementById("user-checkbox");
-        if (!agreeCheckbox.checked) {
-          alert("Please agree to the Terms & Conditions.");
-          return;
-        }
-  
-        let name = encodeURIComponent(document.getElementById("name").value);
-        let username = encodeURIComponent(document.getElementById("username").value);
-        let email = encodeURIComponent(document.getElementById("email").value);
-        let password = encodeURIComponent(document.getElementById("password").value);
-        document.location.href = `/auth/register?first_name=${name}&last_name=email-auth&username=${username}&email=${email}&password=${password}`;
-      }
-    </script>
-  
-    <!--Start Back To Top Button-->
-    <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
-    <!--End Back To Top Button-->
-      <!-- Bootstrap core JavaScript-->
-      <script src="../../../assets/js/jquery.min.js"></script>
-      <script src="../../../assets/js/popper.min.js"></script>
-      <script src="../../../assets/js/bootstrap.min.js"></script>
-      <script src="../../../assets/js/app-script.js"></script> 
+</body>
+</html>

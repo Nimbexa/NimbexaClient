@@ -302,14 +302,35 @@
                                       }
                                       showNotification()
                                     </script>
-                                    <% } else if (req.query.err=="INSUFFICIENT" ) { %>
+                                    <% } else if (req.query.err=="none" ) { %>
+                                      <script>
+                                        function showNotification() {
+                                          toastr.success('Welcome Back!', 'Success!');
+                                        }
+                                        showNotification()
+                                      </script>
+                                      <% } else if (req.query.err=="none" ) { %>
+                                        <script>
+                                          function showNotification() {
+                                            toastr.success('Welcome to Nimbexa.', 'Success!');
+                                          }
+                                          showNotification()
+                                        </script>
+                                        <% } else if (req.query.err=="INSUFFICIENT" ) { %>
                                       <script>
                                         function showNotification() {
                                           toastr.error('You do not have enough resources to sell!', 'Error!');
                                         }
                                         showNotification()
                                       </script>
-                                      <% } else if (req.query.err=="INVALIDREFERRAL" ) { %>
+                                      <% } else if (req.query.err=="TERMS_UNACCEPTED" ) { %>
+                                        <script>
+                                          function showNotification() {
+                                            toastr.error('Please accept to our terms and conditions!', 'Error!');
+                                          }
+                                          showNotification()
+                                        </script>
+                                        <% } else if (req.query.err=="INVALIDREFERRAL" ) { %>
                                         <script>
                                           function showNotification() {
                                             toastr.error('Invalid referral code!', 'Error!');
